@@ -20,7 +20,7 @@ def transform_data():
         transforms.ToTensor(),
         transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
     ])
-    total_list = glioma_tumor_images + meningioma_tumor_images + no_tumor_images + pituitory_tumor_images
+    
     model_dataset = datasets.ImageFolder(path, transform=data_transform)
     img, ann = model_dataset[0]
     print("iiiiiiii",img)
