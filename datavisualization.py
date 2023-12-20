@@ -39,6 +39,6 @@ def visualise_image():
     mountain_image.save('mountain_image.jpg')
     sea_image.save('sea_image.jpg')
     street_image.save('street_image.jpg')
-    return path,glioma_tumor_images,meningioma_tumor_images,no_tumor_images,pituitory_tumor_images
+    return path,buildings_image,forest_image,glacier_image,mountain_image,sea_image,street_image 
 
 visualise_image()
