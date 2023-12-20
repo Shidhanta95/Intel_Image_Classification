@@ -12,6 +12,7 @@ def visualise_image():
     url_response = requests.get(url)
     with zipfile.ZipFile(BytesIO(url_response.content)) as z:
         z.extractall('.')
+    print(os.listdir())
     buildings = os.listdir(os.path.join(os.getcwd(),"seg_train/seg_train/buildings"))
     forest = os.listdir(os.path.join(os.getcwd(),"seg_train/seg_train/forest"))
     glacier = os.listdir(os.path.join(os.getcwd(),"seg_train/seg_train/glacier"))
