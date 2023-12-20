@@ -7,7 +7,7 @@ def extract_data():
     bucket_name = 'deeplearning-mlops'
     url = s3.generate_presigned_url(
                     ClientMethod='get_object',
-                    Params={'Bucket': bucket_name, 'Key': 'Training.zip'},
+                    Params={'Bucket': bucket_name, 'Key': 'Intel_Image_Classification.zip'},
                     ExpiresIn=7200  # URL expiration time in seconds (adjust as needed)
                 )
     print(url)
